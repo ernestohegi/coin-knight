@@ -1,4 +1,6 @@
-- once all coins are collected, drop them into the treasure chest to move to the next level
+- treasure chest to drop coins
+- when all coins are collected show message
 - set a fixed score element on screen
 - add ladder functionality
 - move small platform only one way
+- add "you died" message
