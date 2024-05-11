@@ -648,10 +648,10 @@ to jump"
 
 [node name="Score" type="Label" parent="Text"]
 unique_name_in_owner = true
-offset_left = 127.0
-offset_top = -100.0
-offset_right = 197.0
-offset_bottom = -77.0
+offset_left = -9.0
+offset_top = -246.0
+offset_right = 61.0
+offset_bottom = -223.0
 theme_override_colors/font_color = Color(0.435294, 0.172549, 0.466667, 1)
 theme_override_fonts/font = ExtResource("9_ykimv")
 theme_override_font_sizes/font_size = 16
