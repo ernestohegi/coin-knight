@@ -1,12 +1,18 @@
-extends Node2D
+extends Area2D
 
 const SPEED = 60
 
 var direction = 1
 
+const player_manager = preload("res://resources/player_manager.tres")
+
 @onready var ray_cast_right = $RayCastRight
 @onready var ray_cast_left = $RayCastLeft
 @onready var animated_sprite = $AnimatedSprite2D
+@onready var killzone = $"../../Environment/Killzone"
+
+func _on_body_entered(body):
+	killzone.kill(body)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):

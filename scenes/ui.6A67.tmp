@@ -8,7 +8,6 @@
 script = ExtResource("1_f612c")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
-visible = false
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -44,10 +43,10 @@ position = Vector2(1075, 67)
 scale = Vector2(2.27272, 2.52941)
 
 [node name="Heart" parent="Node2D" instance=ExtResource("3_bn6x4")]
-position = Vector2(1045, 67)
+position = Vector2(1070, 67)
 
 [node name="Heart2" parent="Node2D" instance=ExtResource("3_bn6x4")]
-position = Vector2(1070, 67)
+position = Vector2(1045, 67)
 
 [node name="Heart3" parent="Node2D" instance=ExtResource("3_bn6x4")]
 position = Vector2(1095, 67)

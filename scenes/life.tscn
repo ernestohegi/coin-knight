@@ -1,0 +1,75 @@
+[gd_scene load_steps=11 format=3 uid="uid://wciso1nsfor2"]
+
+[ext_resource type="Texture2D" uid="uid://bppee4rored83" path="res://assets/sprites/Big Heart Idle (18x14).png" id="1_lbigu"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f217q"]
+atlas = ExtResource("1_lbigu")
+region = Rect2(0, 0, 18, 14)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cjjfs"]
+atlas = ExtResource("1_lbigu")
+region = Rect2(18, 0, 18, 14)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w6tx3"]
+atlas = ExtResource("1_lbigu")
+region = Rect2(36, 0, 18, 14)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i4goe"]
+atlas = ExtResource("1_lbigu")
+region = Rect2(54, 0, 18, 14)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p8eyk"]
+atlas = ExtResource("1_lbigu")
+region = Rect2(72, 0, 18, 14)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_spnd4"]
+atlas = ExtResource("1_lbigu")
+region = Rect2(90, 0, 18, 14)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aff1r"]
+atlas = ExtResource("1_lbigu")
+region = Rect2(108, 0, 18, 14)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5qeqh"]
+atlas = ExtResource("1_lbigu")
+region = Rect2(126, 0, 18, 14)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hf73a"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f217q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cjjfs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w6tx3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i4goe")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p8eyk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_spnd4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aff1r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5qeqh")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Heart" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_hf73a")
+autoplay = "default"
+frame_progress = 0.971633
