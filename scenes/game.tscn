@@ -702,6 +702,18 @@ text = "Collect all 12 coins here  to WIN"
 horizontal_alignment = 1
 autowrap_mode = 2
 
+[node name="Coins2" type="Label" parent="Text"]
+offset_left = 55.0
+offset_top = 125.0
+offset_right = 135.0
+offset_bottom = 166.0
+theme_override_colors/font_color = Color(0.435294, 0.172549, 0.466667, 1)
+theme_override_fonts/font = ExtResource("9_ykimv")
+theme_override_font_sizes/font_size = 8
+text = "A game by Ernesto Hegi :)"
+horizontal_alignment = 1
+autowrap_mode = 2
+
 [node name="Death" type="Label" parent="Text"]
 offset_left = 424.0
 offset_top = 319.0
