@@ -1,9 +1,9 @@
 extends CanvasLayer
 
-@onready var label = %Label
 @onready var heart = $Node2D/Heart
 @onready var heart_2 = $Node2D/Heart2
 @onready var heart_3 = $Node2D/Heart3
+@onready var label = %Label
 
 const player_manager = preload("res://resources/player_manager.tres")
 
@@ -15,7 +15,7 @@ func _ready():
 	update_lives(player_manager.get_lives())
 	
 func update_score(newScore):
-	label.text = 'Coins: ' + str(newScore)
+	label.text = str(newScore)
 
 func update_lives(lives_left):
 	if lives_left <= 2:

@@ -1,100 +1,8 @@
-[gd_scene load_steps=21 format=3 uid="uid://duo4xe0eopohk"]
+[gd_scene load_steps=8 format=3 uid="uid://duo4xe0eopohk"]
 
-[ext_resource type="Texture2D" uid="uid://dlk1xo2wnaocq" path="res://assets/sprites/coin.png" id="1_ehnow"]
 [ext_resource type="Script" path="res://scripts/coin.gd" id="1_vdb6i"]
+[ext_resource type="PackedScene" uid="uid://l6r88ireath8" path="res://scenes/coin_asset.tscn" id="2_40n83"]
 [ext_resource type="AudioStream" uid="uid://c3ssr6yjls54k" path="res://assets/sounds/coin.wav" id="3_lmeqs"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_l672x"]
-atlas = ExtResource("1_ehnow")
-region = Rect2(0, 0, 16, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_8urpr"]
-atlas = ExtResource("1_ehnow")
-region = Rect2(16, 0, 16, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_6droc"]
-atlas = ExtResource("1_ehnow")
-region = Rect2(32, 0, 16, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_kayba"]
-atlas = ExtResource("1_ehnow")
-region = Rect2(48, 0, 16, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_kiytf"]
-atlas = ExtResource("1_ehnow")
-region = Rect2(64, 0, 16, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_dvblg"]
-atlas = ExtResource("1_ehnow")
-region = Rect2(80, 0, 16, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_4qkdc"]
-atlas = ExtResource("1_ehnow")
-region = Rect2(96, 0, 16, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_i0exc"]
-atlas = ExtResource("1_ehnow")
-region = Rect2(112, 0, 16, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_77dbt"]
-atlas = ExtResource("1_ehnow")
-region = Rect2(128, 0, 16, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_adral"]
-atlas = ExtResource("1_ehnow")
-region = Rect2(144, 0, 16, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_qevev"]
-atlas = ExtResource("1_ehnow")
-region = Rect2(160, 0, 16, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ybj8u"]
-atlas = ExtResource("1_ehnow")
-region = Rect2(176, 0, 16, 16)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_hjrmc"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_l672x")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_8urpr")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_6droc")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_kayba")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_kiytf")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_dvblg")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_4qkdc")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_i0exc")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_77dbt")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_adral")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_qevev")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ybj8u")
-}],
-"loop": true,
-"name": &"default",
-"speed": 10.0
-}]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_oqp6v"]
 radius = 5.09902
@@ -201,10 +109,7 @@ _data = {
 collision_mask = 2
 script = ExtResource("1_vdb6i")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-sprite_frames = SubResource("SpriteFrames_hjrmc")
-autoplay = "default"
-frame_progress = 0.579423
+[node name="AnimatedSprite2D" parent="." instance=ExtResource("2_40n83")]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_oqp6v")
