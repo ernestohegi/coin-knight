@@ -4,6 +4,9 @@ class_name PlayerManager
 
 @export var lives: int
 
+func reset_lives():
+	lives = 3
+
 func get_lives():
 	return lives
 

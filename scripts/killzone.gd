@@ -2,6 +2,7 @@ extends Area2D
 
 @onready var timer = $Timer
 @onready var ui = %UI
+@onready var game_over_screen = $"../GameOverScreen"
 
 const player_manager = preload("res://resources/player_manager.tres")
 
@@ -13,6 +14,7 @@ func kill(body):
 	if (player_manager.is_dead()):
 		Engine.time_scale = 0.1
 		print('game over')
+		game_over_screen.visible = true
 	else:
 		Engine.time_scale = 0.3
 		body.get_node("CollisionShape2D").queue_free()

@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://cpm42joxsm2yu"]
+[gd_scene load_steps=25 format=3 uid="uid://cpm42joxsm2yu"]
 
 [ext_resource type="Script" path="res://scripts/game_manager.gd" id="1_64p2e"]
 [ext_resource type="PackedScene" uid="uid://buao8okyad74n" path="res://scenes/player.tscn" id="1_r6eki"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://bl05li2u5vn8t" path="res://scenes/enemy.tscn" id="4_lpyig"]
 [ext_resource type="PackedScene" uid="uid://b64hs2xh6xlqe" path="res://scenes/ui.tscn" id="4_mad4h"]
 [ext_resource type="PackedScene" uid="uid://cnfmsfb053dwv" path="res://scenes/platform.tscn" id="4_sitrq"]
+[ext_resource type="PackedScene" uid="uid://wekxbdmgxj7d" path="res://scenes/game_over_screen.tscn" id="5_j1bra"]
 [ext_resource type="PackedScene" uid="uid://bd5pgn3mn4csq" path="res://scenes/platform_large.tscn" id="5_xjwy3"]
 [ext_resource type="PackedScene" uid="uid://duo4xe0eopohk" path="res://scenes/coin.tscn" id="6_25uwv"]
 [ext_resource type="PackedScene" uid="uid://u3oghox5jvkt" path="res://scenes/killzone.tscn" id="7_rd4kp"]
@@ -572,6 +573,9 @@ position = Vector2(240, 359)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Environment/Killzone"]
 position = Vector2(0, -41)
 shape = SubResource("WorldBoundaryShape2D_aucco")
+
+[node name="GameOverScreen" parent="Environment" instance=ExtResource("5_j1bra")]
+visible = false
 
 [node name="Players" type="Node" parent="."]
 
