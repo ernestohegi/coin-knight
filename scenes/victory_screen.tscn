@@ -4,7 +4,7 @@
 [ext_resource type="FontFile" uid="uid://fc1pndii00tw" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="2_7sd7y"]
 [ext_resource type="FontFile" uid="uid://yujuiu33reux" path="res://assets/fonts/PixelOperator8.ttf" id="3_vjyqd"]
 
-[node name="GameOverScreen" type="CanvasLayer"]
+[node name="VictoryScreen" type="CanvasLayer"]
 script = ExtResource("1_p4mus")
 
 [node name="Panel" type="Panel" parent="."]
@@ -27,7 +27,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("2_7sd7y")
 theme_override_font_sizes/font_size = 64
-text = "Game Over"
+text = "You WON!"
 horizontal_alignment = 1
 vertical_alignment = 1
 
